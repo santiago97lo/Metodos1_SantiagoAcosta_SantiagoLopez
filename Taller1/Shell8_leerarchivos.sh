@@ -1,7 +1,6 @@
 #!/bin/bash
 
-while IFS= read -r line
-do
-  echo "$line"
-done < .git
+filecontent=( `cat "archivo_a_leer" `)
+
+echo ${filecontent[2]}
 
